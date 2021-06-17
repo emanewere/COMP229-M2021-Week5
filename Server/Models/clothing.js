@@ -15,6 +15,6 @@ const clothingSchema = new Schema({
 }, {
     collection: 'clothing'
 });
-const Model = Mongoose.model("Clothing", clothingSchema);
+const Model = mongoose_1.default.model("Clothing", clothingSchema);
 exports.default = Model;
 //# sourceMappingURL=clothing.js.map
