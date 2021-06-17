@@ -1,0 +1,27 @@
+Commands for mongo
+1. show dbs --shows databases
+2. Way to make a database is the use the 'use clothing-store' command
+
+plan for clothing_store db
+name
+brand 
+description
+price
+db.clothing.insert({
+"name":"Slim-fit non-stretch cotton shirt for men",
+"brand":"Old navy",
+"category":"Tops", 
+"colour":"blackjack",
+"size": "medium",
+"price":"34.99",
+});
+
+db.clothing.find() for finding table entries
+
+add mongoosejs into our configuration for our app..
+
+we need to have a configuration that allows us to specify where our server is by using db.ts
+
+import * as DBConfig from "./db" means am importing from my own file
+
+https://mongoosejs.com/
