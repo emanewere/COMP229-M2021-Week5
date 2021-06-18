@@ -16,7 +16,6 @@ export function DisplayClothingListPage(req:Request, res:Response,next:NextFunct
 export function DisplayEditPage(req:Request, res:Response,next:NextFunction):void
 {
     let id = req.params.id;
-    console.log(id);
     //pass the id to the database
     //db.clothing.find({"_id: id"})
     Clothing.findById(id,{},{},(err,clothingItemToEdit)=>
@@ -28,7 +27,7 @@ export function DisplayEditPage(req:Request, res:Response,next:NextFunction):voi
         }
 
         //show the edit view
-        res.render('index',{title: 'Edit', page:'edit', item: clothingItemToEdit});
+        res.render('index',{title: 'Edit', page:'edit', clothing: clothingItemToEdit});
     });
 
 }
